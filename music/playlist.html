@@ -1,0 +1,148 @@
+<!-- playlist.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pakistani Drama OST Playlist 💖</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin:0;
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(to top right, #ffe6f2, #e3b4c9);
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      min-height:100vh;
+      padding: 1rem;
+    }
+    #playlist {
+      background:white;
+      border-radius:15px;
+      box-shadow:0 4px 20px rgba(0,0,0,0.1);
+      width:100%;
+      max-width:700px;
+      padding:20px;
+      text-align:center;
+    }
+    h2 { color:#ac0f5c; margin-bottom:20px; }
+    .track {
+      display:flex;
+      align-items:center;
+      margin-bottom:16px;
+      cursor:pointer;
+      transition:background 0.3s;
+      padding:8px;
+      border-radius:8px;
+    }
+    .track:hover { background:#fde3f0; }
+    .track img {
+      width:60px; height:60px;
+      border-radius:8px; margin-right:12px;
+    }
+    .track-info { text-align:left; }
+    .track-title { margin:0; font-size:1.1rem; color:#333; }
+    .track-source { margin:0; font-size:0.9rem; color:#666; }
+    .play-btn {
+      margin-left:auto;
+      background:#ac0f5c;
+      color:white;
+      border:none; border-radius:50%;
+      width:36px; height:36px;
+      font-size:1rem;
+    }
+    iframe {
+      width:100%; height:240px;
+      border:none; border-radius:8px;
+      margin-top:20px;
+    }
+  </style>
+</head>
+<body>
+  <div id="playlist">
+    <h2>🎧 Pakistani Drama OSTs</h2>
+
+    <div class="track" onclick="loadVideo('6--TvFJBf3U')">
+      <img src="https://youtu.be/BWdl3VxaWDY?si=5Z0vUkZTE1TXP6Do" alt="Meem Se Mohabbat OST"/>
+      <div class="track-info">
+        <p class="track-title">Beqarar Yeh Dil • Meem Se Mohabbat OST</p>
+        <p class="track-source">Asim Azhar & Quratulain Balouch</p>
+      </div>
+      <button class="play-btn">▶️</button>
+    </div>
+
+    <div class="track" onclick="loadVideo('6DdNwCrv4HI')">
+      <img src="https://youtu.be/TLeuObNLmXE?si=5quQwhJFt9gpAOrh" alt="Kuch Ankahi OST"/>
+      <div class="track-info">
+        <p class="track-title">Kuch Ankahi OST</p>
+        <p class="track-source">Azaan Sami Khan</p>
+      </div>
+      <button class="play-btn">▶️</button>
+    </div>
+
+    <div class="track" onclick="loadVideo('7S_ElwH8Z9s')">
+      <img src="https://youtu.be/45uspJIDaiA?si=WlXR1i6Iixyi44TH" alt="Suno Chanda OST"/>
+      <div class="track-info">
+        <p class="track-title">Suno Chanda OST</p>
+        <p class="track-source">Farhan Saeed</p>
+      </div>
+      <button class="play-btn">▶️</button>
+    </div>
+
+    <div class="track" onclick="loadVideo('GiVIJve94cY')">
+      <img src="https://youtu.be/c5tx-7oDc6o?si=hIWI1MilQW0qn9Xa" alt="Tere Bin OST"/>
+      <div class="track-info">
+        <p class="track-title">Tere Bin OST</p>
+        <p class="track-source">Shani Arshad</p>
+      </div>
+      <button class="play-btn">▶️</button>
+    </div>
+
+    <div class="track" onclick="loadVideo('InKk7wKArGo')">
+      <img src="https://img.youtube.com/vi/InKk7wKArGo/0.jpg" alt="Humsafar OST"/>
+      <div class="track-info">
+        <p class="track-title">Humsafar OST</p>
+        <p class="track-source">Quratulain Balouch</p>
+      </div>
+      <button class="play-btn">▶️</button>
+    </div>
+
+    <div class="track" onclick="loadVideo('Oa2rJdRcdzE')">
+      <img src="https://img.youtube.com/vi/Oa2rJdRcdzE/0.jpg" alt="Zindagi Gulzar Hai OST"/>
+      <div class="track-info">
+        <p class="track-title">Zindagi Gulzar Hai OST</p>
+        <p class="track-source">Ali Zafar</p>
+      </div>
+      <button class="play-btn">▶️</button>
+    </div>
+
+    <div class="track" onclick="loadVideo('VWRnFiGdpyY')">
+      <img src="https://youtu.be/ysiwvDn8HdM?si=YMbr7aTaK0b2mdWI" alt="Dastaan OST"/>
+      <div class="track-info">
+        <p class="track-title">Dastaan OST</p>
+        <p class="track-source">Fahad Khan</p>
+      </div>
+      <button class="play-btn">▶️</button>
+    </div>
+
+    <div class="track" onclick="loadVideo('Ddzgx4OZPbs')">
+      <img src="https://youtu.be/CNqo0m8-ssg?si=Dt6mgM4V2N5XSzqL" alt="Bin Roye OST"/>
+      <div class="track-info">
+        <p class="track-title">Bin Roye OST</p>
+        <p class="track-source">Rahat Fateh Ali Khan</p>
+      </div>
+      <button class="play-btn">▶️</button>
+    </div>
+
+    <iframe id="player" src="" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+
+  <script>
+    function loadVideo(id) {
+      document.getElementById('player').src =
+        `https://www.youtube.com/embed/${id}?autoplay=1`;
+    }
+  </script>
+</body>
+</html>
