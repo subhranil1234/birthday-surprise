@@ -59,7 +59,7 @@
   <div id="playlist">
     <h2>YOUR TOP 8 FAV SONGS</h2>
 
-    <div class="track" onclick="playAudio('audio/Beqarar_Yeh_Dil_PagalWorld.mp3')">
+    <div class="track" onclick="playAudio('Beqarar Yeh Dil - PagalWorld.mp3')">
       <div class="track-info">
         <p class="track-title">Beqarar Yeh Dil • Meem Se Mohabbat OST</p>
         <p class="track-source">Asim Azhar & Quratulain Balouch</p>
@@ -67,7 +67,7 @@
       <button class="play-btn">▶️</button>
     </div>
 
-    <div class="track" onclick="playAudio('audio/Heer_Haider_Ali.mp3')">
+    <div class="track" onclick="playAudio('Heer Haider Ali 128 Kbps.mp3')">
       <div class="track-info">
         <p class="track-title">Heer</p>
         <p class="track-source">Haider Ali</p>
@@ -75,7 +75,7 @@
       <button class="play-btn">▶️</button>
     </div>
 
-    <div class="track" onclick="playAudio('audio/Jhol_Maanu.mp3')">
+    <div class="track" onclick="playAudio('Jhol (PenduJatt.Com.Se).mp3')">
       <div class="track-info">
         <p class="track-title">Jhol</p>
         <p class="track-source">Maanu</p>
@@ -83,7 +83,7 @@
       <button class="play-btn">▶️</button>
     </div>
 
-    <div class="track" onclick="playAudio('audio/Meri_Banogi_Kya_Rito_Riba.mp3')">
+    <div class="track" onclick="playAudio('Meri Banogi Kya Rito Riba 128 Kbps.mp3')">
       <div class="track-info">
         <p class="track-title">Meri Banogi Kya</p>
         <p class="track-source">Rito Riba</p>
@@ -91,7 +91,7 @@
       <button class="play-btn">▶️</button>
     </div>
 
-    <div class="track" onclick="playAudio('audio/Paaro_Aditya_Rikhari.mp3')">
+    <div class="track" onclick="playAudio('Paaro (PenduJatt.Com.Se).mp3')">
       <div class="track-info">
         <p class="track-title">Paaro</p>
         <p class="track-source">Aditya Rikhari</p>
@@ -99,7 +99,7 @@
       <button class="play-btn">▶️</button>
     </div>
 
-    <div class="track" onclick="playAudio('audio/Sajde_Faheem_Abdullah.mp3')">
+    <div class="track" onclick="playAudio('Sajde - Faheem Abdullah 128 Kbps.mp3')">
       <div class="track-info">
         <p class="track-title">Sajde</p>
         <p class="track-source">Faheem Abdullah</p>
@@ -107,7 +107,7 @@
       <button class="play-btn">▶️</button>
     </div>
 
-    <div class="track" onclick="playAudio('audio/Sinchan_Title_Track.mp3')">
+    <div class="track" onclick="playAudio('Shin-Chan-Title.mp3')">
       <div class="track-info">
         <p class="track-title">Sinchan Title track</p>
         <p class="track-source"></p>
@@ -115,10 +115,19 @@
       <button class="play-btn">▶️</button>
     </div>
 
-    <div class="track" onclick="playAudio('audio/Tomake_Chai_Arijit_Singh.mp3')">
+    <div class="track" onclick="playAudio('Tomake Chai Title Track (PenduJatt.Com.Se).mp3')">
       <div class="track-info">
         <p class="track-title">Tomake chai</p>
         <p class="track-source">Arijit Singh</p>
+      </div>
+      <button class="play-btn">▶️</button>
+    </div>
+
+    <!-- Bonus -->
+    <div class="track" onclick="playAudio('happy-birthday-to-you-370804.mp3')">
+      <div class="track-info">
+        <p class="track-title">Happy Birthday</p>
+        <p class="track-source">🎂 Surprise Song</p>
       </div>
       <button class="play-btn">▶️</button>
     </div>
@@ -131,7 +140,7 @@
       const player = document.getElementById("audioPlayer");
       player.src = src;
       player.style.display = "block";
-      player.play().catch(err => console.log("Playback error:", err));
+      player.play().catch(err => console.error("Playback error:", err));
     }
   </script>
 </body>
